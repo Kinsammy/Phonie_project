@@ -1,0 +1,80 @@
+body {
+   background: url(../images/ilgmyzin.jpg) no-repeat center fixed;
+   background-size: cover;
+}
+
+.container {
+    background: #6E944A;
+    width: 350px;
+    height: 400px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 70px 50px 20px 50px;
+    border: 2px solid black;
+    border-radius: 20%;
+    
+  }
+
+  h2 {
+    color: white
+  }
+
+  .form-feed{
+    display: flex;
+    justify-content: center;
+  }
+
+  .box {
+    width: 360px;
+    height: 35px;
+    margin-top: 10px;
+    font-family: verdana;
+    font-size: 12px;
+  }
+
+  .phone{
+    display: flex;
+  }
+
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  .text-area {
+    height: 35px;
+    width: 340px;
+    border: none;
+    padding-left: 20px;
+    
+  }
+
+  .gender {
+    color: white;
+    font-size: 18px;
+  }
+
+  .radio {
+    color: white;
+    background: #2d3e3f;
+    line-height: 38px;
+  }
+
+  .submit {
+    float: right;
+    border: none;
+    color: white;
+    width: 110px;
+    height: 35px;
+    background: #ff6600;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+

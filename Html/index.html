@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonie</title>
+    <link rel="stylesheet" href="../Css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Phonie</h1>
+    </div>
+    <div class="container">
+      <h2>Phonie Registration Form</h2>
+
+      <div class="form-feed">
+        <form action="" id="form">
+          <div class="box">
+            <!-- <label for="fname">First name:</label> -->
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First Name"
+              class="text-area"
+            />
+          </div>
+
+          <div class="box">
+            <!-- <label for="lname">Last name:</label> -->
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Last name"
+              class="text-area"
+            />
+          </div>
+          <div class="phone">
+            <div class="box">
+              <!-- <label for="phone">Phone number:</label> -->
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="Phone No."
+                class="text-area"
+              />
+            </div>
+            <div class="logos">
+              <img src="" id="networkLogo" style="display: none" />
+            </div>
+          </div>
+
+          <div class="box">
+            <!-- <label for="email">Email ID:</label> -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email id"
+              class="text-area"
+            />
+          </div>
+
+          <div class="box gender">
+            <label for="gender">Gender:</label>
+            <input type="radio" name="radio" value="yes" />Male
+            <input type="radio" name="radio" value="yes"  /> Female
+          </div>
+
+          <div class="box">
+            <input type="Submit" name="Submit" class="submit" value="SUBMIT" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../JavaScript/app.js"></script>
+  </body>
+</html>

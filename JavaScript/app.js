@@ -2,10 +2,9 @@ const form = document.querySelector('form')
 form.onsubmit = (e) => {
   e.preventDefault()
 }
-var input = document.getElementById('phone')
-const networkLogoEle = document.getElementById('networkLogo')
 
-var mtnNumbers = ['0703', '0706', '0803', '0806', '0813', '0816', '0810','0814', '0903', '0906']
+const input = document.getElementById('phone')
+const networkLogoEle = document.getElementById('networkLogo')
 
 input.addEventListener('change', () => {
   if (
@@ -15,12 +14,12 @@ input.addEventListener('change', () => {
     input.value.startsWith('0810') || input.value.startsWith('0814') ||
     input.value.startsWith('0903') || input.value.startsWith('0906') ||
     input.value.startsWith('07025') || input.value.startsWith('07026')
-  )
-  {
+  ){
     console.log('This is MTN number')
     networkLogoEle.setAttribute('src', '../images/mtn.png')
     networkLogoEle.style.display = "block";
-  } else if (
+  }
+  else if (
     input.value.startsWith('0802') || input.value.startsWith('0808') ||
     input.value.startsWith('0708') || input.value.startsWith('0812') ||
     input.value.startsWith('0902') || input.value.startsWith('0901') ||
@@ -49,7 +48,8 @@ input.addEventListener('change', () => {
     console.log('This is 9mobile number')
     networkLogoEle.setAttribute('src', '../images/9mobile.png')
     networkLogoEle.style.display = "block";
-  } else {
+  }
+  else { 
     validate(input)
     console.log('This is international number')
     networkLogoEle.setAttribute('src', '')
@@ -57,14 +57,3 @@ input.addEventListener('change', () => {
   }
 })
 
-
-
-function validate(phone) {
-  var regex = /^\+(?:[0-9] ?){6,14}[0-9]$/;
-
-  if (regex.test(phone)) {
-      // Valid international phone number
-  } else {
-      // Invalid international phone number
-  }
-}

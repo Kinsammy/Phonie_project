@@ -3,7 +3,35 @@ body {
    background-size: cover;
 }
 
+.header{
+  width: 100%;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  transform: skewX(3deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+        -1px -1px 10px firebrick,
+        -30px 20px 60px dimgrey;
+
+}
+
+
+h2 {
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-size: px;
+  transform: skewY(deg);
+  letter-spacing: px;
+  word-spacing: px;
+  color: tomato;
+  text-shadow: 
+        -1px -1px 10px firebrick,
+        -30px 20px 60px dimgrey;
+}
+
 .container {
+  width: 100%;
     background: #6E944A;
     width: 350px;
     height: 400px;
@@ -16,7 +44,6 @@ body {
     padding: 70px 50px 20px 50px;
     border: 2px solid black;
     border-radius: 20%;
-    
   }
 
   h2 {

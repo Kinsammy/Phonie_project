@@ -15,9 +15,8 @@
       <h2>Phonie Registration Form</h2>
 
       <div class="form-feed">
-        <form action="" id="form">
+        <form target="_blank" method="post" id="form">
           <div class="box">
-            <!-- <label for="fname">First name:</label> -->
             <input
               type="text"
               id="fname"
@@ -28,7 +27,6 @@
           </div>
 
           <div class="box">
-            <!-- <label for="lname">Last name:</label> -->
             <input
               type="text"
               id="lname"
@@ -39,7 +37,6 @@
           </div>
           <div class="phone">
             <div class="box">
-              <!-- <label for="phone">Phone number:</label> -->
               <input
                 type="number"
                 id="phone"
@@ -54,7 +51,6 @@
           </div>
 
           <div class="box">
-            <!-- <label for="email">Email ID:</label> -->
             <input
               type="email"
               id="email"
@@ -67,11 +63,13 @@
           <div class="box gender">
             <label for="gender">Gender:</label>
             <input type="radio" name="radio" value="yes" />Male
-            <input type="radio" name="radio" value="yes"  /> Female
+            <input type="radio" name="radio" value="yes" /> Female
           </div>
 
           <div class="box">
-            <input type="Submit" name="Submit" class="submit" value="SUBMIT" />
+            <a href="#">
+              <input type="Submit" name="Submit" class="submit" value="SUBMIT"
+            /></a>
           </div>
         </form>
       </div>
